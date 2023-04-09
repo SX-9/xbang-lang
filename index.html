@@ -30,9 +30,8 @@
     <p>An Esoteric Programming Language</p>
     <button onclick="run()">Run</button>
     <textarea autofocus style="height:50vh">
-=hi;/=world;.#/=you;\=hey;.#=number;/:(10*2)+1;.
-    [hi world\n hey you\n number 21]</textarea
-    >
+=hi;/=world;.|:prompt('name:','jeff');%#\=number;/:(10*2)+1;. [try running this]
+    </textarea>
     <pre>Output Here</pre>
     <br />
     <hr size="1" />
@@ -47,12 +46,14 @@
       Write 1 Or 2 Character Commands To Read And Write From This Array.
     </p>
     <h3>Learning Commands</h3>
-    <p>There Are 7 Commands In This Language. Heres How To Use Them:</p>
+    <p>There Are 8 Commands In This Language. Heres How To Use Them:</p>
     <ul>
       <li><bold>/</bold> - Moves The Position Up</li>
       <li><bold>\</bold> - Moves The Position Down</li>
-      <li><bold>.</bold> - Prints The Array</li>
-      <li><bold>#</bold> - Clears The Array</li>
+      <li><bold>.</bold> - Print The Array</li>
+      <li><bold>%</bold> - Print The Current Position Value</li>
+      <li><bold>|</bold> - Print New Line</li>
+      <li><bold>#</bold> - Clears The Array But Position Is Saved</li>
       <li><bold>=<i>text</i>;</bold> - Sets Array Value At Current Position</li>
       <li><bold>:<i>code</i>;</bold> - Sets Array Value But Evaluates JS</li>
       <li><bold>[<i>text</i>]</bold> - Code Comments</li>
@@ -65,7 +66,7 @@
         let pos = 0;
         let skip = false;
 
-        out.innerText = "";
+        out.innerText = " ";
         code.forEach((c, i) => {
           if (c === ";" || c === "]") {
             skip = false;
@@ -87,7 +88,11 @@
             array[pos] = eval(code.slice(i + 1, code.indexOf(";", i)).join(""));
             skip = true;
           } else if (c === ".") {
-            out.innerText += array.join(" ") + "\n";
+            out.innerText += array.join(" ") + " ";
+          } else if (c === "%") {
+            out.innerText += array[pos] + " ";
+          } else if (c === "|") {
+            out.innerText += "\n "
           } else if (c === "#") {
             array = [];
           } else return;
