@@ -1,2 +1,2 @@
 # xbang-lang
-Making My Programming Language: X!
+Making My Own Esoteric Programming Language: X!
