@@ -1,0 +1,17 @@
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  4/9/2023 7:05:34 PM ::1 GET /
+ HTTP  4/9/2023 7:05:34 PM ::1 Returned 200 in 181 ms
+ HTTP  4/9/2023 7:05:34 PM ::1 GET /favicon.ico
+ HTTP  4/9/2023 7:05:34 PM ::1 Returned 404 in 15 ms
+ HTTP  4/9/2023 7:07:24 PM ::1 GET /
+ HTTP  4/9/2023 7:07:24 PM ::1 Returned 304 in 41 ms
+ HTTP  4/9/2023 7:07:25 PM ::1 GET /favicon.ico
+ HTTP  4/9/2023 7:07:25 PM ::1 Returned 404 in 19 ms
+ HTTP  4/9/2023 7:08:17 PM ::1 GET /
+ HTTP  4/9/2023 7:08:17 PM ::1 Returned 200 in 15 ms
+ HTTP  4/9/2023 7:08:19 PM ::1 GET /
+ HTTP  4/9/2023 7:08:19 PM ::1 Returned 304 in 4 ms
+ HTTP  4/9/2023 7:09:19 PM ::1 GET /
+ HTTP  4/9/2023 7:09:19 PM ::1 Returned 200 in 7 ms
+ HTTP  4/9/2023 7:14:20 PM ::1 GET /
+ HTTP  4/9/2023 7:14:20 PM ::1 Returned 200 in 19 ms
